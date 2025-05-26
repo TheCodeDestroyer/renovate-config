@@ -5,7 +5,9 @@
     "config:recommended",
     ":automergeLinters",
     ":automergeMinor",
-    ":prHourlyLimit1"
+    ":prHourlyLimit1",
+    ":semanticCommits",
+    ":label(dependencies)"
   ],
   "lockFileMaintenance": {
     "enabled": true,
