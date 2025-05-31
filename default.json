@@ -2,23 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Base Renovate configuration with recommended settings, automerging, and safety limits.",
   "extends": [
-    "config:recommended",
-    ":automergeLinters",
-    ":automergeMinor",
-    ":prHourlyLimit1",
-    ":semanticCommits",
-    ":label(dependencies)"
+    "local>thecodedestroyer/renovate-config//base.json",
+    ":prHourlyLimit1"
   ],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
-  },
-  "packageRules": [
-    {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "3 days"
-    }
-  ],
-  "configMigration": true,
   "branchConcurrentLimit": 3
 }

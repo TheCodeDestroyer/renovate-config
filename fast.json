@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Fast Renovate configuration with recommended settings, automerging, and safety limits.",
+  "extends": [
+    "local>thecodedestroyer/renovate-config//base.json"
+  ],
+  "branchConcurrentLimit": 5
+}
